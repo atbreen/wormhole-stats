@@ -36,7 +36,7 @@ function DailyNotional() {
             <Line
                 config={{
                     title: 'Daily Notional Value Transferred (Last 14 Days)',
-                    xLabel: 'Day',
+                    xLabel: 'Date',
                     yLabel: 'Dollhairs',
                     data: {
                         labels: Object.keys(results?.Daily || {})
