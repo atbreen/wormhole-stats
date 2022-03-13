@@ -1,5 +1,6 @@
 {
   "name": "wormhole-stats",
+  "homepage": "https://atbreen.github.io/wormhole-stats/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
