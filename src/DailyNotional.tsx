@@ -103,6 +103,7 @@ function DailyNotional() {
                         yTickCount: 3,
                         xTickCount: 100,
                         legendPosition: chartXkcd.config.positionType.upLeft,
+                        dataColors: ['rgb(231, 40, 80)', 'rgb(245, 56, 255)', 'rgb(104, 105, 115)', 'rgb(56, 73, 255)', 'rgb(255, 235, 56)','rgb(159, 56, 255)','rgb(255, 56, 56)','rgb(0, 147, 245)','rgb(219, 229, 251)'] 
                     },
                 }}
             />
