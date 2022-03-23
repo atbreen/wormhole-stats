@@ -29,7 +29,7 @@ function DailyNotional() {
     }, []) // empty array - no dependencies, only run once on mount
     return (
         <>
-            <Typography fontFamily={'xkcd'} variant="h3" gutterBottom>
+            <Typography fontFamily={'xkcd'} variant="h3" gutterBottom color='rgb(248,240,227)' bgcolor='rgb(30,30,30)'>
                 ${numeral(results?.WithinPeriod['*']['*']).format('0,0.00')}{' '}
                 monies transferred
             </Typography>
@@ -55,16 +55,16 @@ function DailyNotional() {
                                     .map((v: any) => v['*']['*']),
                             },
                             {
-                                label: 'From Ethereum',
-                                data: Object.values(results?.Daily || {})
-                                    .slice(-14)
-                                    .map((v: any) => v['2']['*']),
-                            },
-                            {
                                 label: 'From Solana',
                                 data: Object.values(results?.Daily || {})
                                     .slice(-14)
                                     .map((v: any) => v['1']['*']),
+                            },
+                            {
+                                label: 'From Ethereum',
+                                data: Object.values(results?.Daily || {})
+                                    .slice(-14)
+                                    .map((v: any) => v['2']['*']),
                             },
                             {
                                 label: 'From Terra',
@@ -77,6 +77,12 @@ function DailyNotional() {
                                 data: Object.values(results?.Daily || {})
                                     .slice(-14)
                                     .map((v: any) => v['5']['*']),
+                            },
+                            {
+                                label: 'From BSC',
+                                data: Object.values(results?.Daily || {})
+                                    .slice(-14)
+                                    .map((v: any) => v['4']['*']),
                             },
                             {
                                 label: 'From Avalanche',
@@ -103,7 +109,9 @@ function DailyNotional() {
                         yTickCount: 3,
                         xTickCount: 100,
                         legendPosition: chartXkcd.config.positionType.upLeft,
-                        dataColors: ['rgb(231, 40, 80)', 'rgb(245, 56, 255)', 'rgb(104, 105, 115)', 'rgb(56, 73, 255)', 'rgb(255, 235, 56)','rgb(159, 56, 255)','rgb(255, 56, 56)','rgb(0, 147, 245)','rgb(219, 229, 251)'] 
+                        dataColors: ['rgb(231, 40, 80)','rgb(245, 56, 255)','rgb(104, 105, 115)','rgb(56, 73, 255)','rgb(159, 56, 255)','rgb(255, 235, 56)','rgb(255, 56, 56)','rgb(0, 147, 245)','rgb(219, 229, 251)'],
+                        strokeColor: 'rgb(248, 240, 227)',
+                        backgroundColor: 'rgb(30,30,30)'
                     },
                 }}
             />
