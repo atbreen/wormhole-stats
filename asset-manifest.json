@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wormhole-stats/static/css/main.073c9b0a.css",
-    "main.js": "/wormhole-stats/static/js/main.3aa5ac3f.js",
+    "main.js": "/wormhole-stats/static/js/main.d31b7f4b.js",
     "static/js/787.858e9a88.chunk.js": "/wormhole-stats/static/js/787.858e9a88.chunk.js",
     "index.html": "/wormhole-stats/index.html",
     "main.073c9b0a.css.map": "/wormhole-stats/static/css/main.073c9b0a.css.map",
-    "main.3aa5ac3f.js.map": "/wormhole-stats/static/js/main.3aa5ac3f.js.map",
+    "main.d31b7f4b.js.map": "/wormhole-stats/static/js/main.d31b7f4b.js.map",
     "787.858e9a88.chunk.js.map": "/wormhole-stats/static/js/787.858e9a88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3aa5ac3f.js"
+    "static/js/main.d31b7f4b.js"
   ]
 }
